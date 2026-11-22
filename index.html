@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Monita: Thoughtful Reminders for You and Your Family</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Monita is a reminder app for iPhone. Say it in one sentence and it sets the time. Send reminders to family and roommates and see when they're done. No sign-up, no tracking.">
+<meta name="description" content="Monita is a reminder app for iPhone and families. Send “take out the trash tonight” to two people: whoever does it checks it off, the other doesn't have to, and you see who. No sign-up, no tracking.">
 <link rel="canonical" href="https://usemonita.com/">
 <link rel="alternate" hreflang="en" href="https://usemonita.com/">
 <link rel="alternate" hreflang="zh-Hans" href="https://usemonita.com/zh/">
@@ -19,7 +19,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Monita">
 <meta property="og:title" content="Monita: Thoughtful Reminders">
-<meta property="og:description" content="Say it once and Monita reminds you. Send reminders to the people you live with and know when they're done.">
+<meta property="og:description" content="Send a reminder to the people you live with. Whoever does it checks it off, and you see who.">
 <meta property="og:url" content="https://usemonita.com/">
 <meta property="og:image" content="https://usemonita.com/img/og.png">
 <meta property="og:image:width" content="1200">
@@ -87,21 +87,67 @@
 
 <main>
   <section class="hero">
-    <div class="wrap">
-      <div class="hero-copy">
-        <span class="eyebrow">Reminders for iPhone, iPad and Apple Watch</span>
-        <h1>Say it once. Monita reminds you.</h1>
-        <div class="try" role="img" aria-label="Typing “Dentist Friday at 3 PM” shows Friday, 3:00 PM before you add it.">
-          <div class="try-input" aria-hidden="true"><span class="mic"><svg viewBox="0 0 16 16"><path d="M8 10.5a2.5 2.5 0 0 0 2.5-2.5V3.5a2.5 2.5 0 0 0-5 0V8A2.5 2.5 0 0 0 8 10.5Zm4-2.5a.75.75 0 0 1 1.5 0 5.5 5.5 0 0 1-4.75 5.45V15h-1.5v-1.55A5.5 5.5 0 0 1 2.5 8 .75.75 0 0 1 4 8a4 4 0 0 0 8 0Z"/></svg></span><span>Dentist Friday at 3 PM</span><span class="try-add">Add</span></div>
-          <div class="try-result" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM8.75 4v3.69l2.28 2.28-1.06 1.06L7.25 8.31V4h1.5Z"/></svg>Friday · 3:00 PM</div>
+    <div class="wrap hero-grid">
+      <div class="hero-head">
+        <span class="eyebrow">For you and the people you live with</span>
+        <h1>Send it to both. See who did it.</h1>
+      </div>
+      <div class="fam" role="img" aria-label="Demo: you send “Take out the trash tonight” to Sam and Lee as Anyone. Sam checks it off at 7:42 PM, it clears from Lee’s list, and you see “Sam finished”.">
+        <div class="fam-send" aria-hidden="true">
+          <div class="fam-to">To <b>Sam</b> and <b>Lee</b> · Anyone</div>
+          <div class="fam-text">Take out the trash tonight</div>
+          <div class="fam-when">Tonight · 7:30 PM</div>
         </div>
-        <p class="lede">Type or say “Dentist Friday at 3 PM.” Check the time, then tap Add. Monita reminds you right on time.</p>
+        <div class="fam-people" aria-hidden="true">
+          <div class="fam-p"><span class="avatar" style="background:#6F8A5E">S</span><div class="fam-who"><b>Sam</b><span>Checked it off · 7:42 PM</span></div><span class="ring done"></span></div>
+          <div class="fam-p off"><span class="avatar" style="background:#8A7AA6">L</span><div class="fam-who"><b>Lee</b><span>Gone from Lee’s list. Nothing to do.</span></div></div>
+        </div>
+        <div class="fam-you" aria-hidden="true"><span class="okdot"></span><div class="fam-who"><b>Sam finished</b><span>Take out the trash · done at 7:42 PM</span></div></div>
+      </div>
+      <div class="hero-body">
+        <p class="lede">Send “Take out the trash tonight” to two people. Whoever gets to it checks it off, the other one doesn’t have to, and you see who did it.</p>
         <div class="cta-row">
           <a class="btn" href="#together">See how it works</a>
           <span class="soon" data-appstore>Coming soon to the App Store</span>
         </div>
       </div>
+    </div>
+  </section>
 
+  <section class="band tint" id="together">
+    <div class="wrap">
+      <div class="center-head">
+        <span class="eyebrow">Remind each other</span>
+        <h2>Two ways to share a job.</h2>
+        <p>Pick how a reminder counts as done when you send it to more than one person. It rings on their phones at the right time, and nobody has to be the family secretary.</p>
+      </div>
+      <div class="modes">
+        <div class="mode">
+          <h3>Anyone</h3>
+          <p>One person does it and it’s done for everyone. The others don’t get asked again.</p>
+          <div class="mini" aria-hidden="true"><div class="mini-row"><span class="okdot"></span><span>Take out the trash</span><span class="mini-ok">Sam finished</span></div></div>
+        </div>
+        <div class="mode">
+          <h3>Each Person</h3>
+          <p>Everyone checks it off on their own. You see who’s left.</p>
+          <div class="mini" aria-hidden="true"><div class="mini-row"><span class="waitdot"></span><span>Pay your share of utilities</span><span class="mini-wait">2 of 3 done</span></div></div>
+        </div>
+      </div>
+      <p class="frames-note">Invite with a link, a QR code or a 6-digit code. Up to 6 people in a group. People you invite never pay to receive or answer reminders.</p>
+    </div>
+  </section>
+
+  <section class="band say" id="say">
+    <div class="wrap split">
+      <div class="section-copy">
+        <span class="eyebrow">For your own day</span>
+        <h2>Say it once. Monita reminds you.</h2>
+        <p>Type or say “Dentist Friday at 3 PM.” Check the time, then tap Add. Several reminders in one sentence, or speak instead of typing.</p>
+        <div class="try" role="img" aria-label="Typing “Dentist Friday at 3 PM” shows Friday, 3:00 PM before you add it.">
+          <div class="try-input" aria-hidden="true"><span class="mic"><svg viewBox="0 0 16 16"><path d="M8 10.5a2.5 2.5 0 0 0 2.5-2.5V3.5a2.5 2.5 0 0 0-5 0V8A2.5 2.5 0 0 0 8 10.5Zm4-2.5a.75.75 0 0 1 1.5 0 5.5 5.5 0 0 1-4.75 5.45V15h-1.5v-1.55A5.5 5.5 0 0 1 2.5 8 .75.75 0 0 1 4 8a4 4 0 0 0 8 0Z"/></svg></span><span>Dentist Friday at 3 PM</span><span class="try-add">Add</span></div>
+          <div class="try-result" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM8.75 4v3.69l2.28 2.28-1.06 1.06L7.25 8.31V4h1.5Z"/></svg>Friday · 3:00 PM</div>
+        </div>
+      </div>
       <div class="phone" role="img" aria-label="Monita on iPhone: typing “Dentist Friday at 3 PM” shows Friday, 3:00 PM underneath before you add it.">
         <div class="screen" aria-hidden="true">
           <div class="status"><span>9:41</span><span>●●● ▮</span></div>
@@ -129,58 +175,19 @@
     </div>
   </section>
 
-  <section class="band tint" id="together">
+  <section class="band tint" id="features">
     <div class="wrap">
       <div class="center-head">
-        <span class="eyebrow">Remind each other</span>
-        <h2>Send a reminder. See when it’s done.</h2>
-        <p>It rings on their phone at the right time. When they check it off, you get a quiet note. Nobody has to be the family secretary.</p>
-      </div>
-      <ol class="frames">
-        <li class="frame">
-          <span class="frame-step">You send</span>
-          <div class="mini" aria-hidden="true">
-            <div class="mini-to">To <b>Home</b> · Anyone</div>
-            <div class="mini-line">Take out the trash at 7:30 PM</div>
-            <div class="mini-result">Tonight · 7:30 PM</div>
-          </div>
-          <p>Anyone in the group can do it.</p>
-        </li>
-        <li class="frame">
-          <span class="frame-step">Sam checks it off</span>
-          <div class="mini" aria-hidden="true">
-            <div class="mini-row"><span class="ring done"></span><span>Take out the trash</span><span class="mini-time">7:42 PM</span></div>
-            <div class="mini-to">From you · Home</div>
-          </div>
-          <p>One tap on Sam’s phone.</p>
-        </li>
-        <li class="frame">
-          <span class="frame-step">You see it’s done</span>
-          <div class="mini" aria-hidden="true">
-            <div class="mini-row"><span class="okdot"></span><span>Take out the trash</span><span class="mini-ok">Sam did it</span></div>
-            <div class="mini-row"><span class="waitdot"></span><span>Pay your share of utilities</span><span class="mini-wait">2 of 3 done</span></div>
-          </div>
-          <p><b>Anyone</b> closes when one person does it. <b>Each Person</b> waits for everyone.</p>
-        </li>
-      </ol>
-      <p class="frames-note">Invite with a link, a QR code or a 6-digit code. Up to 6 people in a group. People you invite never pay to receive or answer reminders.</p>
-    </div>
-  </section>
-
-  <section class="band" id="features">
-    <div class="wrap">
-      <div class="center-head">
-        <span class="eyebrow">For your own day</span>
+        <span class="eyebrow">And for everything else</span>
         <h2>Thoughtful about time, so you don’t have to be.</h2>
       </div>
       <div class="grid grid-main">
-        <div><span class="k">One sentence</span><h3>Say it the way you’d say it</h3><p>See the time before you add it and fix it with a tap. Several reminders in one sentence, or speak instead of typing.</p></div>
         <div><span class="k">Repeats</span><h3>Repeats the way life does</h3><p>Daily, weekdays, monthly, every few hours, or a few days after you last did it. Missed reminders don’t pile up.</p></div>
+        <div><span class="k">Alarm</span><h3>Ring like an alarm</h3><p>For pills, pickups and flights. On iOS 26.1 or later, once you allow alarms, it rings through silent mode and Focus.</p></div>
         <div><span class="k">History</span><h3>See what you got done</h3><p>Check it off and it moves to your history: a calendar, streaks and a monthly booklet of the moments you finished.</p></div>
       </div>
       <h3 class="more-head">Also in Monita</h3>
       <ul class="more">
-        <li><b>Ring like an alarm.</b> On iOS 26.1 or later, once you allow alarms, it rings through silent mode and Focus.</li>
         <li><b>When you get home.</b> Reminders for arriving or leaving. Your location stays on your phone.</li>
         <li><b>Lock Screen and widgets.</b> A countdown in the Dynamic Island; check off from widgets or Control Center.</li>
         <li><b>Siri and Shortcuts.</b> Add, complete and postpone by voice. Share text from any app.</li>
@@ -191,7 +198,7 @@
     </div>
   </section>
 
-  <section class="band tint" id="privacy">
+  <section class="band" id="privacy">
     <div class="wrap">
       <div class="center-head">
         <span class="eyebrow">Private by design</span>
@@ -207,7 +214,7 @@
     </div>
   </section>
 
-  <section class="band" id="pricing">
+  <section class="band tint" id="pricing">
     <div class="wrap">
       <div class="center-head">
         <span class="eyebrow">Pricing</span>
@@ -239,7 +246,7 @@
     </div>
   </section>
 
-  <section class="band tint" id="faq">
+  <section class="band" id="faq">
     <div class="wrap">
       <div class="center-head"><h2>Questions</h2></div>
       <div class="faq">
@@ -252,7 +259,7 @@
     </div>
   </section>
 
-  <section class="band closing" id="get">
+  <section class="band tint closing" id="get">
     <div class="wrap">
       <h2>Say it once. Then let it go.</h2>
       <div class="cta-row">

@@ -40,21 +40,67 @@
 
 <main>
   <section class="hero">
-    <div class="wrap">
-      <div class="hero-copy">
-        <span class="eyebrow">iPhone、iPad 和 Apple Watch 上的提醒</span>
-        <h1><span class="nb">说一句，</span><span class="nb">到点提醒。</span></h1>
-        <div class="try" role="img" aria-label="输入「周五下午三点看牙」，下面先显示「周五 15:00」，再点添加。">
-          <div class="try-input" aria-hidden="true"><span class="mic"><svg viewBox="0 0 16 16"><path d="M8 10.5a2.5 2.5 0 0 0 2.5-2.5V3.5a2.5 2.5 0 0 0-5 0V8A2.5 2.5 0 0 0 8 10.5Zm4-2.5a.75.75 0 0 1 1.5 0 5.5 5.5 0 0 1-4.75 5.45V15h-1.5v-1.55A5.5 5.5 0 0 1 2.5 8 .75.75 0 0 1 4 8a4 4 0 0 0 8 0Z"/></svg></span><span>周五下午三点看牙</span><span class="try-add">添加</span></div>
-          <div class="try-result" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM8.75 4v3.69l2.28 2.28-1.06 1.06L7.25 8.31V4h1.5Z"/></svg>周五 15:00</div>
+    <div class="wrap hero-grid">
+      <div class="hero-head">
+        <span class="eyebrow">给你自己，也给一起生活的人</span>
+        <h1><span class="nb">发给两个人，</span><span class="nb">谁做了你知道。</span></h1>
+      </div>
+      <div class="fam" role="img" aria-label="演示：你把「今晚倒垃圾」按「谁做都行」发给小周和阿杰。小周 19:42 打了勾，阿杰那边自动消失，你看到「小周 完成了」。">
+        <div class="fam-send" aria-hidden="true">
+          <div class="fam-to">发给 <b>小周</b> 和 <b>阿杰</b> · 谁做都行</div>
+          <div class="fam-text">今晚倒垃圾</div>
+          <div class="fam-when">今天 19:30</div>
         </div>
-        <p class="lede">打一句或说一句「周五下午三点看牙」，看一眼时间对不对，点添加。到点记上会提醒你。</p>
+        <div class="fam-people" aria-hidden="true">
+          <div class="fam-p"><span class="avatar" style="background:#6F8A5E">小</span><div class="fam-who"><b>小周</b><span>打了勾 · 19:42</span></div><span class="ring done"></span></div>
+          <div class="fam-p off"><span class="avatar" style="background:#8A7AA6">阿</span><div class="fam-who"><b>阿杰</b><span>自动消失，不用做了</span></div></div>
+        </div>
+        <div class="fam-you" aria-hidden="true"><span class="okdot"></span><div class="fam-who"><b>小周 完成了</b><span>倒垃圾 · 19:42 完成</span></div></div>
+      </div>
+      <div class="hero-body">
+        <p class="lede">把「今晚倒垃圾」发给两个人。谁先做谁打勾，另一个人就不用做了，你也知道是谁做的。</p>
         <div class="cta-row">
           <a class="btn" href="#together">看看怎么用</a>
           <span class="soon" data-appstore>即将登陆 App Store</span>
         </div>
       </div>
+    </div>
+  </section>
 
+  <section class="band tint" id="together">
+    <div class="wrap">
+      <div class="center-head">
+        <span class="eyebrow">互相提醒</span>
+        <h2><span class="nb">一件事分给几个人，</span><span class="nb">有两种算法。</span></h2>
+        <p>发给不止一个人时，选这件事怎么算做完。到点在每个人手机上响，家里不用再有一个人专门记事、催人。</p>
+      </div>
+      <div class="modes">
+        <div class="mode">
+          <h3>谁做都行</h3>
+          <p>有一个人做了就算完成，别人那边自动消失，不会再被问。</p>
+          <div class="mini" aria-hidden="true"><div class="mini-row"><span class="okdot"></span><span>倒垃圾</span><span class="mini-ok">小周 完成了</span></div></div>
+        </div>
+        <div class="mode">
+          <h3>每人都要做</h3>
+          <p>每个人各自打勾，你能看到还差谁。</p>
+          <div class="mini" aria-hidden="true"><div class="mini-row"><span class="waitdot"></span><span>交这个月的水电费</span><span class="mini-wait">3 人里 2 人做完</span></div></div>
+        </div>
+      </div>
+      <p class="frames-note">用链接、二维码或 6 位邀请码邀请。一个组最多 6 个人。被邀请的人收提醒、回提醒永远免费。</p>
+    </div>
+  </section>
+
+  <section class="band say" id="say">
+    <div class="wrap split">
+      <div class="section-copy">
+        <span class="eyebrow">你自己的一天</span>
+        <h2><span class="nb">说一句，</span><span class="nb">到点提醒。</span></h2>
+        <p>打一句或说一句「周五下午三点看牙」，看一眼时间对不对，点添加。一句话可以拆成几条，也可以直接说。</p>
+        <div class="try" role="img" aria-label="输入「周五下午三点看牙」，下面先显示「周五 15:00」，再点添加。">
+          <div class="try-input" aria-hidden="true"><span class="mic"><svg viewBox="0 0 16 16"><path d="M8 10.5a2.5 2.5 0 0 0 2.5-2.5V3.5a2.5 2.5 0 0 0-5 0V8A2.5 2.5 0 0 0 8 10.5Zm4-2.5a.75.75 0 0 1 1.5 0 5.5 5.5 0 0 1-4.75 5.45V15h-1.5v-1.55A5.5 5.5 0 0 1 2.5 8 .75.75 0 0 1 4 8a4 4 0 0 0 8 0Z"/></svg></span><span>周五下午三点看牙</span><span class="try-add">添加</span></div>
+          <div class="try-result" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM8.75 4v3.69l2.28 2.28-1.06 1.06L7.25 8.31V4h1.5Z"/></svg>周五 15:00</div>
+        </div>
+      </div>
       <div class="phone" role="img" aria-label="iPhone 上的记上：输入「周五下午三点看牙」，下面显示「周五 15:00」。">
         <div class="screen" aria-hidden="true">
           <div class="status"><span>9:41</span><span>●●● ▮</span></div>
@@ -82,58 +128,19 @@
     </div>
   </section>
 
-  <section class="band tint" id="together">
+  <section class="band tint" id="features">
     <div class="wrap">
       <div class="center-head">
-        <span class="eyebrow">互相提醒</span>
-        <h2><span class="nb">发一条提醒，</span><span class="nb">做完了你会知道。</span></h2>
-        <p>到点在对方手机上响。对方打了勾，你会收到一条安静的通知。家里不用再有一个人专门记事、催人。</p>
-      </div>
-      <ol class="frames">
-        <li class="frame">
-          <span class="frame-step">你发出去</span>
-          <div class="mini" aria-hidden="true">
-            <div class="mini-to">发给 <b>家里</b> · 谁做都行</div>
-            <div class="mini-line">晚上七点半倒垃圾</div>
-            <div class="mini-result">今天 19:30</div>
-          </div>
-          <p>组里谁做都行。</p>
-        </li>
-        <li class="frame">
-          <span class="frame-step">小周打了勾</span>
-          <div class="mini" aria-hidden="true">
-            <div class="mini-row"><span class="ring done"></span><span>倒垃圾</span><span class="mini-time">19:42</span></div>
-            <div class="mini-to">来自你 · 家里</div>
-          </div>
-          <p>在小周的手机上点一下就好。</p>
-        </li>
-        <li class="frame">
-          <span class="frame-step">你看到做完了</span>
-          <div class="mini" aria-hidden="true">
-            <div class="mini-row"><span class="okdot"></span><span>倒垃圾</span><span class="mini-ok">小周做了</span></div>
-            <div class="mini-row"><span class="waitdot"></span><span>交这个月的水电费</span><span class="mini-wait">3 人里 2 人做完</span></div>
-          </div>
-          <p>「谁做都行」有一个人做了就算完成；「每人都要做」等所有人都做完。</p>
-        </li>
-      </ol>
-      <p class="frames-note">用链接、二维码或 6 位邀请码邀请。一个组最多 6 个人。被邀请的人收提醒、回提醒永远免费。</p>
-    </div>
-  </section>
-
-  <section class="band" id="features">
-    <div class="wrap">
-      <div class="center-head">
-        <span class="eyebrow">你自己的一天</span>
+        <span class="eyebrow">还有每天的这些事</span>
         <h2><span class="nb">时间的事交给它，</span><span class="nb">你不用一直记着。</span></h2>
       </div>
       <div class="grid grid-main">
-        <div><span class="k">一句话</span><h3>怎么说就怎么写</h3><p>添加前先看时间，点一下就能改。一句话可以拆成几条，也可以直接说。</p></div>
         <div><span class="k">重复</span><h3>照生活的节奏重复</h3><p>每天、工作日、每月、每隔几小时，或者做完后隔几天。错过的不会堆在一起。</p></div>
+        <div><span class="k">闹钟</span><h3>像闹钟一样响</h3><p>吃药、接人、赶飞机。iOS 26.1 及以上、允许闹钟后，静音和专注模式下也会响。</p></div>
         <div><span class="k">历史</span><h3>看看做成了什么</h3><p>打了勾就进历史：日历、连续天数，还有每月一本小手册。</p></div>
       </div>
       <h3 class="more-head">还有这些</h3>
       <ul class="more">
-        <li><b>像闹钟一样响。</b>iOS 26.1 及以上、允许闹钟后，静音和专注模式下也会响。</li>
         <li><b>到家时提醒。</b>到达或离开某个地方时提醒你，你的位置只留在手机上。</li>
         <li><b>锁屏和小组件。</b>灵动岛倒计时，小组件和控制中心里直接打勾。</li>
         <li><b>Siri 和快捷指令。</b>用声音添加、完成、推迟。从任何 App 分享文字进来。</li>
@@ -144,7 +151,7 @@
     </div>
   </section>
 
-  <section class="band tint" id="privacy">
+  <section class="band" id="privacy">
     <div class="wrap">
       <div class="center-head">
         <span class="eyebrow">隐私</span>
@@ -160,7 +167,7 @@
     </div>
   </section>
 
-  <section class="band" id="pricing">
+  <section class="band tint" id="pricing">
     <div class="wrap">
       <div class="center-head">
         <span class="eyebrow">价格（美区）</span>
